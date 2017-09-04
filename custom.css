@@ -10,7 +10,7 @@
 
 #tab-buttons {
     padding: 0px;
-    background-color: #1d3649;
+    background-color: #ff6600;
     height: 100%;
     width: 8em;
 }
@@ -33,10 +33,24 @@
 }
 
 .ibm-graphic-tabs.ibm-vertical-tabs ul.ibm-tabs li a:hover::after, .ibm-graphic-tabs.ibm-vertical-tabs ul.ibm-tabs li a[aria-selected='true']::after {
-    border-left-color: #00b4a0;
+    border-left-color: white;
+}
+
+.ibm-graphic-tabs.ibm-vertical-tabs ul.ibm-tabs li a:hover::after, .ibm-graphic-tabs.ibm-vertical-tabs ul.ibm-tabs li a[aria-selected='true']:hover {
+    border-left-color: black;
 }
 
 .ibm-graphic-tabs.ibm-vertical-tabs .ibm-tabs a {
-    background-color: #1d3649;
+    background-color: #ff6600;
     color: white;
+}
+
+
+.ibm-graphic-tabs.ibm-vertical-tabs .ibm-tabs a:hover {
+    background-color: #ff6600;
+    color: black;
+}
+
+.ibm-graphic-tabs .ibm-tabs li a[aria-selected='true']:hover {
+    color: black;
 }
