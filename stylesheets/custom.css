@@ -10,7 +10,7 @@
 
 #tab-buttons {
     padding: 0px;
-    background-color: #ff6600;
+    background-color: #ff6b05;
     height: 100%;
     width: 8em;
 }
@@ -41,13 +41,13 @@
 }
 
 .ibm-graphic-tabs.ibm-vertical-tabs .ibm-tabs a {
-    background-color: #ff6600;
+    background-color: #ff6b05;
     color: white;
 }
 
 
 .ibm-graphic-tabs.ibm-vertical-tabs .ibm-tabs a:hover {
-    background-color: #ff6600;
+    background-color: #ff6b05;
     color: black;
 }
 
