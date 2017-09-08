@@ -16,6 +16,10 @@
     display: flex;
 }
 
+.mdl-textfield__expandable-holder {
+    width: 300px;
+}
+
 .mdl-layout__header {
     background-color: #ff6b05;
 }
