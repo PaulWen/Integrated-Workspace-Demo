@@ -12,6 +12,7 @@
     <link href="https://1.www.s81c.com/common/v18/css/expertise.css" rel="stylesheet">
     <link href="https://1.www.s81c.com/common/v18/css/syntaxhighlighter.css" rel="stylesheet">
     <link href="https://1.www.s81c.com/common/v18/css/grid-fluid.css" rel="stylesheet">
+    <link href="stylesheets/material.min.css" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet">
@@ -25,6 +26,7 @@
     <script src="https://1.www.s81c.com/common/v18/js/expertise.js"></script>
     <script src="https://1.www.s81c.com/common/v18/js/dyntabs.js"></script>
     <script src="https://1.www.s81c.com/common/v18/js/syntaxhighlighter.js"></script>
+    <script defer src="libs/mdl/material-1-1-3.min.js"></script>
 
     <!-- Own CSS File -->
     <link href="stylesheets/custom.css" rel="stylesheet">
@@ -33,138 +35,174 @@
 </head>
 <body id="ibm-com" class="ibm-type">
 
+
 <div data-widget="dyntabs" class="ibm-graphic-tabs ibm-vertical-tabs">
     <div id="content" class="">
 
-        <!-- Tab-Buttons -->
-        <div id="tab-buttons" class="">
-            <div class="ibm-tab-section">
-                <ul class="ibm-tabs" style="overflow: hidden;">
-                    <div style="text-align: center">
-                        <a target="_blank" href="https://www.hapag-lloyd.de/"
-                           style="font-size: 14pt">
-                            <img src="hlag-logo.png" alt="Hapag Lloyd" style="width:55%">
-                            <strong>Hapag-Lloyd</strong>
-                        </a>
+        <!-- The drawer is always open in large screens. The header is always shown,
+          even in small screens. -->
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
+            mdl-layout--fixed-header">
+            <header class="mdl-layout__header">
+                <div class="mdl-layout__header-row">
+                    <div class="mdl-layout-spacer"></div>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                  mdl-textfield--floating-label mdl-textfield--align-right">
+                        <label class="mdl-button mdl-js-button mdl-button--icon"
+                               for="fixed-header-drawer-exp">
+                            <i class="material-icons">search</i>
+                        </label>
+                        <div class="mdl-textfield__expandable-holder">
+                            <input class="mdl-textfield__input" type="text" name="sample"
+                                   id="fixed-header-drawer-exp">
+                        </div>
                     </div>
-                </ul>
+                </div>
+            </header>
+            <!--NAVIGATION-->
+
+            <!-- Tab-Buttons -->
+            <div id="tab-buttons" class="mdl-layout__drawer">
+                <div class="ibm-tab-section">
+                    <ul class="ibm-tabs" style="overflow: hidden;">
+                        <div style="text-align: center">
+                            <a target="_blank" href="https://www.hapag-lloyd.de/"
+                               style="font-size: 14pt">
+                                <img src="hlag-logo.png" alt="Hapag Lloyd" style="width:55%">
+                                <strong>Hapag-Lloyd</strong>
+                            </a>
+                        </div>
+                    </ul>
+                </div>
+                <div class="ibm-tab-section">
+                    <ul class="ibm-tabs" role="tablist">
+                        <li><a aria-selected="true" role="tab" href="#mail"><i
+                                class="material-icons">&#xE0E1;</i></a>
+                        </li>
+                        <li><a role="tab" href="#calendar"><i
+                                class="material-icons">&#xE24F;</i></a>
+                        </li>
+                        <li><a role="tab" href="#todo"><i
+                                class="material-icons">&#xE876;</i></a></li>
+                        <li><a role="tab" href="#faces"><i
+                                class="material-icons">&#xE7FC;</i></a></li>
+                        <li><a role="tab" href="#chat"><i
+                                class="material-icons">&#xE0CB;</i></a></li>
+                        <li><a role="tab" href="#video-chat"><i
+                                class="material-icons">&#xE62E;</i></a>
+                        </li>
+                        <li><a role="tab" href="#box"><i class="material-icons">&#xE2C2;</i></a>
+                        </li>
+                        <li><a role="tab" href="#fis"><strong>FIS</strong></a></li>
+                    </ul>
+                </div>
+                <div class="ibm-tab-section">
+                    <ul class="ibm-tabs">
+                        <a target="_blank"
+                           href="https://office.live.com/start/Word.aspx?auth=1&nf=1#"><strong>Word</strong></a>
+                        <a target="_blank"
+                           href="https://office.live.com/start/Excel.aspx?ui=de-DE&rs=DE&auth=1&nf=1"><strong>Excel</strong></a>
+                        <a target="_blank"
+                           href="https://office.live.com/start/PowerPoint.aspx?ui=de-DE&rs=DE&auth=1&nf=1"><strong>PowerPoint</strong></a>
+                    </ul>
+                </div>
             </div>
-            <div class="ibm-tab-section">
-                <ul class="ibm-tabs" role="tablist">
-                    <li><a aria-selected="true" role="tab" href="#mail"><i class="material-icons">&#xE0E1;</i></a>
-                    </li>
-                    <li><a role="tab" href="#calendar"><i class="material-icons">&#xE24F;</i></a>
-                    </li>
-                    <li><a role="tab" href="#todo"><i class="material-icons">&#xE876;</i></a></li>
-                    <li><a role="tab" href="#faces"><i class="material-icons">&#xE7FC;</i></a></li>
-                    <li><a role="tab" href="#chat"><i class="material-icons">&#xE0CB;</i></a></li>
-                    <li><a role="tab" href="#video-chat"><i class="material-icons">&#xE62E;</i></a>
-                    </li>
-                    <li><a role="tab" href="#box"><i class="material-icons">&#xE2C2;</i></a></li>
-                    <li><a role="tab" href="#fis">FIS</a></li>
-                </ul>
-            </div>
-            <div class="ibm-tab-section">
-                <ul class="ibm-tabs">
-                    <a target="_blank"
-                       href="https://office.live.com/start/Word.aspx?auth=1&nf=1#"><strong>Word</strong></a>
-                    <a target="_blank"
-                       href="https://office.live.com/start/Excel.aspx?ui=de-DE&rs=DE&auth=1&nf=1"><strong>Excel</strong></a>
-                    <a target="_blank"
-                       href="https://office.live.com/start/PowerPoint.aspx?ui=de-DE&rs=DE&auth=1&nf=1"><strong>PowerPoint</strong></a>
-                </ul>
-            </div>
+
+
+            <main class="mdl-layout__content">
+                <!--CONTENT-->
+
+                <!-- Tabs Content -->
+                <div id="tab-content" class="">
+
+                    <div id="mail" class="ibm-tabs-content">
+                        <iframe src="https://mail.notes.na.collabserv.com/verse?#/inbox" style="
+                    position: relative;
+                    top: -40px;
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+                "></iframe>
+                    </div>
+
+                    <div id="todo" class="ibm-tabs-content">
+                        <iframe src="https://mail.notes.na.collabserv.com/livemail/iNotes/ToDo/?OpenDocument&noredir=1"
+                                style="
+                    position: relative;
+                    top: -40px;
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+                "></iframe>
+                    </div>
+
+                    <div id="chat" class="ibm-tabs-content">
+                        <iframe src="https://workspace.ibm.com/" style="
+                    position: relative;
+                    top: 0px;
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+                "></iframe>
+                    </div>
+
+                    <div id="video-chat" class="ibm-tabs-content">
+                        <iframe src="https://apps.na.collabserv.com/meetings/" style="
+                    position: relative;
+                    top: -40px;
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+                "></iframe>
+                    </div>
+
+                    <div id="calendar" class="ibm-tabs-content">
+                        <iframe src="https://mail.notes.na.collabserv.com/verse#/calendar"
+                                style="
+                    position: relative;
+                    top: -40px;
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+                "></iframe>
+                    </div>
+
+                    <div id="faces" class="ibm-tabs-content">
+                        <iframe src="https://w3.ibm.com/bluepages/" style="
+                    position: relative;
+                    top: 0px;
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+                "></iframe>
+                    </div>
+
+                    <div id="box" class="ibm-tabs-content">
+                        <iframe src="https://ibm.ent.box.com/folder/0" style="
+                    position: relative;
+                    top: 0px;
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+                "></iframe>
+                    </div>
+
+                    <div id="fis" class="ibm-tabs-content">
+                        <iframe src="fis-login.html" style="
+                    position: relative;
+                    top: 0px;
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+                "></iframe>
+                    </div>
+                </div>
+
+
+            </main>
         </div>
 
-        <!-- Frabe an HLAG -->
-        <!-- Excel, Powerpoint, Word als im neuen tab öffnen einrichten  -->
 
-
-        <!-- Tabs Content -->
-        <div id="tab-content" class="">
-
-            <div id="mail" class="ibm-tabs-content">
-                <iframe src="https://mail.notes.na.collabserv.com/verse?#/inbox" style="
-                    position: relative;
-                    top: -40px;
-                    width: 100%;
-                    height: 100%;
-                    overflow: hidden;
-                "></iframe>
-            </div>
-
-            <div id="todo" class="ibm-tabs-content">
-                <iframe src="https://mail.notes.na.collabserv.com/livemail/iNotes/ToDo/?OpenDocument&noredir=1"
-                        style="
-                    position: relative;
-                    top: -40px;
-                    width: 100%;
-                    height: 100%;
-                    overflow: hidden;
-                "></iframe>
-            </div>
-
-            <div id="chat" class="ibm-tabs-content">
-                <iframe src="https://workspace.ibm.com/" style="
-                    position: relative;
-                    top: 0px;
-                    width: 100%;
-                    height: 100%;
-                    overflow: hidden;
-                "></iframe>
-            </div>
-
-            <div id="video-chat" class="ibm-tabs-content">
-                <iframe src="https://apps.na.collabserv.com/meetings/" style="
-                    position: relative;
-                    top: -40px;
-                    width: 100%;
-                    height: 100%;
-                    overflow: hidden;
-                "></iframe>
-            </div>
-
-            <div id="calendar" class="ibm-tabs-content">
-                <iframe src="https://mail.notes.na.collabserv.com/verse#/calendar" style="
-                    position: relative;
-                    top: -40px;
-                    width: 100%;
-                    height: 100%;
-                    overflow: hidden;
-                "></iframe>
-            </div>
-
-            <div id="faces" class="ibm-tabs-content">
-                <iframe src="https://w3.ibm.com/bluepages/" style="
-                    position: relative;
-                    top: 0px;
-                    width: 100%;
-                    height: 100%;
-                    overflow: hidden;
-                "></iframe>
-            </div>
-
-            <div id="box" class="ibm-tabs-content">
-                <iframe src="https://ibm.ent.box.com/folder/0" style="
-                    position: relative;
-                    top: 0px;
-                    width: 100%;
-                    height: 100%;
-                    overflow: hidden;
-                "></iframe>
-            </div>
-
-            <div id="fis" class="ibm-tabs-content">
-                <iframe src="fis-login.html" style="
-                    position: relative;
-                    top: 0px;
-                    width: 100%;
-                    height: 100%;
-                    overflow: hidden;
-                "></iframe>
-            </div>
-
-        </div>
     </div>
 </div>
 
